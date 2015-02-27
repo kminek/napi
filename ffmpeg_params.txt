@@ -1,0 +1,3 @@
+http://superuser.com/questions/377343/cut-part-from-video-file-from-start-position-to-end-position-with-ffmpeg
+ffmpeg -ss 300 -i in.mkv -t 30 -c:v libx264 -c:a aac -strict experimental -b:a 128k out.mp4
+ffmpeg -i in.mkv -c:v libx264 -c:a aac -strict experimental -b:a 128k out.mp4
